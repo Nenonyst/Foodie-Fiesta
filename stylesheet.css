@@ -1,0 +1,202 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+  background-color: silver;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 140px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Placeholder for Website Name */
+.site-name {
+  /* Add your styles here */
+  font-size: 2em;
+  font-weight: bold;
+  color: darkgreen;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: silver;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+/* Main Content Styles */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+}
+
+.content {
+  max-width: 600px;
+  margin: 20px;
+}
+
+.content p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.image-container {
+  max-width: 600px;
+  margin: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content button {
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar li {
+      float: none;
+  }
+
+  .navbar li a {
+      padding: 10px 20px;
+  }
+
+  .content p {
+      padding: 15px;
+      font-size: 1em;
+  }
+
+  .image-container img {
+      max-width: 100%;
+  }
+
+  .content button {
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+  }
+
+}
+
+/* Footer */
+footer .footer_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: silver;
+    width: 1520px;
+    height: 240px;
+}
+
+footer .footer_main .footer_tag {
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p {
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover {
+    color: #fac031;
+}
+
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: lightgray;
+    width: 1520px;
+    height: 40px; /* Corrected missing 'px' in height */
+}
+
+footer .end span {
+    color:darkgoldenrod;
+    margin-left: 10px;
+}
